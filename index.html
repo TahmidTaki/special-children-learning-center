@@ -8,6 +8,12 @@
     <title>Special Learning Center</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.20.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        .accordion-content {
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+        }
+    </style>
 </head>
 
 <body>
@@ -165,7 +171,11 @@
         <!-- section body  -->
         <div class="mx-16">
 
-            <!-- mobile view  -->
+            <!-- 
+                =====================
+                    mobile view  
+                ======================
+            -->
             <div class="card card-compact w-full bg-base-100 shadow-xl sm:block md:hidden my-4">
                 <div>
                     <figure><img src="images/ser8.jpg" class="object-cover h-64 w-full" alt="service1" />
@@ -420,8 +430,164 @@
 -->
 
 
+    <!-- 
+        ============================
+        Accordion section starts 
+       =============================
+    -->
+
+    <section>
+        <!-- section head  -->
+        <div class="text-center mt-24 mb-8">
+            <h2 class="font-bold text-4xl my-4 mt-16 text-stone-900">Frequently Asked Questions</h2>
+            <p class="font-semibold text-xl text-stone-900">This Website is Built using HTML CSS Tailwind, Some FAQs
+                about the technologies</p>
+        </div>
+
+        <!-- accordion  -->
+        <div class="bg-accent bg-opacity-20 grid place-items-center">
+            <div class="w-6/12 mx-auto rounded border">
+                <div class="bg-white p-10 shadow-sm">
+
+                    <p class="text-sm font-light text-gray-600 my-3">
+                        Feel Free to Contact Us for Any Queries at 011-123-123
+                    </p>
+
+                    <div class="h-1 w-full mx-auto border-b my-5"></div>
+
+
+                    <div class="transition hover:bg-indigo-50">
+                        <!-- header -->
+                        <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+                            <i class="fas fa-plus"></i>
+                            <h3>Difference between Flexbox and Grid</h3>
+                        </div>
+                        <!-- Content -->
+                        <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+                            <p class="leading-6 font-light pl-9 text-justify">
+                                Dimensions define the primary demarcation between Flexbox and CSS Grid. Flexbox was
+                                designed specifically for one-dimensional layouts, while CSS Grid is engineered to
+                                enable two-dimensional layouts. Therefore, CSS Grid can easily render rows and columns
+                                simultaneously.
+
+                                In layperson’s terms, CSS Grid presents a larger canvas, while Flexbox offers minute
+                                functionality that operates in a restricted space. The grids have been designed for a
+                                two-dimensional organization.
+                            </p>
+                            <button
+                                class="rounded-full bg-indigo-600 text-white font-medium font-lg px-6 py-2 my-5 ml-9">Learn
+                                more</button>
+                        </div>
+                    </div>
+
+                    <!-- Bootstrap vs Tailwind CSS: What are the differences? -->
+                    <div class="transition hover:bg-indigo-50">
+                        <!-- header -->
+                        <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+                            <i class="fas fa-plus"></i>
+                            <h3>Bootstrap vs Tailwind CSS: What are the differences?</h3>
+                        </div>
+                        <!-- Content -->
+                        <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+                            <p class="leading-6 font-light pl-9 text-justify">
+                                Developers describe Bootstrap as "Simple and flexible HTML, CSS, and JS for popular UI
+                                components and interactions". Bootstrap is the most popular HTML, CSS, and JS framework
+                                for developing responsive, mobile first projects on the web. On the other hand, Tailwind
+                                CSS is detailed as "A utility-first CSS framework for rapid UI development". Tailwind is
+                                different from frameworks like Bootstrap, Foundation, or Bulma in that it's not a UI
+                                kit. It doesn't have a default theme, and there are no build-in UI components. It comes
+                                with a menu of predesigned widgets to build your site with, but doesn't impose design
+                                decisions that are difficult to undo.
+                            </p>
+                            <button
+                                class="rounded-full bg-indigo-600 text-white font-medium font-lg px-6 py-2 my-5 ml-9">Learn
+                                more</button>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Wrapper -->
+                    <div class="transition hover:bg-indigo-50">
+                        <!-- header -->
+                        <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+                            <i class="fas fa-plus"></i>
+                            <h3>What is CSS box Modelling?</h3>
+                        </div>
+                        <!-- Content -->
+                        <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+                            <div class="flex">
+                                <img src="images/boxmodel.png" alt="">
+                                <p class="leading-6 font-light pl-9 text-justify">
+                                    The CSS Box Model is used to create a definition for the way the HTML elements are
+                                    organized on the screen. This approach accounts for options such as margins,
+                                    padding, borders, and all the properties that manipulate them. Each element can be
+                                    thought of as having its own box.
+                                </p>
+                            </div>
+
+                            <button
+                                class="rounded-full bg-indigo-600 text-white font-medium font-lg px-6 py-2 my-5 ml-9">Learn
+                                more</button>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Wrapper -->
+                    <div class="transition hover:bg-indigo-50">
+                        <!-- header -->
+                        <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+                            <i class="fas fa-plus"></i>
+                            <h3>What are Semantic Tags?</h3>
+                        </div>
+                        <!-- Content -->
+                        <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0">
+                            <p class="leading-6 font-light pl-9 text-justify">
+                                A semantic element clearly describes its meaning to both the browser and the developer.
+                                Semantic HTML elements are those that clearly describe their meaning in a human- and
+                                machine-readable way.
+                            </p>
+                            <button
+                                class="rounded-full bg-indigo-600 text-white font-medium font-lg px-6 py-2 my-5 ml-9">Learn
+                                more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 
+        ============================
+        Accordion section ends 
+       =============================
+      -->
+
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        const accordionHeader = document.querySelectorAll(".accordion-header");
+        accordionHeader.forEach((header) => {
+            header.addEventListener("click", function () {
+                const accordionContent = header.parentElement.querySelector(".accordion-content");
+                let accordionMaxHeight = accordionContent.style.maxHeight;
+
+                // Condition handling
+                if (accordionMaxHeight == "0px" || accordionMaxHeight.length == 0) {
+                    accordionContent.style.maxHeight = `${accordionContent.scrollHeight + 32}px`;
+                    header.querySelector(".fas").classList.remove("fa-plus");
+                    header.querySelector(".fas").classList.add("fa-minus");
+                    header.parentElement.classList.add("bg-indigo-50");
+                } else {
+                    accordionContent.style.maxHeight = `0px`;
+                    header.querySelector(".fas").classList.add("fa-plus");
+                    header.querySelector(".fas").classList.remove("fa-minus");
+                    header.parentElement.classList.remove("bg-indigo-50");
+                }
+            });
+        });
+    </script>
 
 </body>
 
